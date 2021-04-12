@@ -1,0 +1,11 @@
+from selenium import webdriver
+import time
+
+
+link = "https:youtube.com"
+driver = webdriver.Chrome("/Users/lOVEPYTHON/Desktop/Chromedriver")
+driver.get(link)
+
+driver.find_element_by_xpath('//*[@id="search"]').send_keys("I love python")
+time.sleep(1)
+print("I love Python --> Successfully searched in YouTube.")
